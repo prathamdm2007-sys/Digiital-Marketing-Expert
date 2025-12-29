@@ -1,0 +1,1220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Pratham IT Solutions | Results-Driven Digital Marketing Agency for Business Growth</title>
+    <meta name="description" content=" Pratham IT Solutions is a premier digital marketing agency specializing in SEO, PPC, social media marketing, and lead generation. We deliver measurable ROI for businesses of all sizes.">
+    <meta name="keywords" content="digital marketing agency, SEO services, PPC campaigns, social media marketing, lead generation, online marketing solutions">
+    <meta name="author" content=" Pratham IT Solutions Agency">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content=" Pratham IT Solutions | Results-Driven Digital Marketing Agency">
+    <meta property="og:description" content="We help businesses grow with data-driven digital marketing strategies that deliver measurable ROI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vertexdigital.com">
+    <meta property="og:image" content="https://www.vertexdigital.com/images/og-image.jpg">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        :root {
+            --primary-blue: #0047AB;
+            --secondary-blue: #002D72;
+            --dark-blue: #001F4F;
+            --vibrant-yellow: #FFD700;
+            --light-yellow: #FFF9E6;
+            --light-gray: #F8F9FA;
+            --medium-gray: #6C757D;
+            --dark-gray: #343A40;
+            --white: #FFFFFF;
+            --transition: all 0.3s ease;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --section-padding: 80px 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--secondary-blue);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 4px;
+            background-color: var(--vibrant-yellow);
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--vibrant-yellow);
+            color: var(--secondary-blue);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-blue);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--secondary-blue);
+            border: 2px solid var(--secondary-blue);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-blue);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+        
+        /* Header Section */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+        
+        .logo span {
+            color: var(--vibrant-yellow);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 30px;
+        }
+        
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--dark-gray);
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary-blue);
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--vibrant-yellow);
+            transition: var(--transition);
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 180px 0 180px;
+            margin-top: 80px;
+        }
+        
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.2rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .hero-image {
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 400px;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-image i {
+            font-size: 10rem;
+            color: var(--primary-blue);
+        }
+        
+        /* Sections Common Styling */
+        section {
+            padding: var(--section-padding);
+        }
+        
+        .section-light {
+            background-color: var(--light-gray);
+        }
+        
+        /* About Section */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-image {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 400px;
+            box-shadow: var(--box-shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .about-image i {
+            font-size: 10rem;
+            color: var(--primary-blue);
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 40px 30px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--light-yellow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+        
+        .service-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+        }
+        
+        /* Portfolio Section */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .portfolio-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .portfolio-image {
+            height: 220px;
+            background-color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .portfolio-image i {
+            font-size: 5rem;
+            color: var(--white);
+        }
+        
+        .portfolio-content {
+            padding: 25px;
+        }
+        
+        /* Projects Section */
+        .projects-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .stat-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+        }
+        
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--light-yellow);
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--light-gray);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .author-avatar i {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            margin-bottom: 0;
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-form {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--light-yellow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        
+        .contact-icon i {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+        }
+        
+        .map-container {
+            height: 300px;
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .map-container i {
+            font-size: 3rem;
+            color: var(--primary-blue);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 70px 0 30px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--vibrant-yellow);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .footer-links a:hover {
+            color: var(--vibrant-yellow);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--vibrant-yellow);
+            color: var(--dark-blue);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            transition: var(--transition);
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-container,
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero-image,
+            .about-image {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                padding: 20px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav li {
+                margin: 0 0 20px 0;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .services-grid,
+            .portfolio-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 30px 20px;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.3rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                padding: 130px 0 60px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/8423792646?text=Hello%20Pratham%20Solutions%2C%20I'm%20interested%20in%20your%20digital%20marketing%20services" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Pratham<span> Solutions</span></a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Get a Free Digital Marketing Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Results-Driven Digital Marketing Agency for Business Growth</h1>
+                <p> Pratham IT Solutions specializes in SEO, PPC, social media marketing, and lead generation strategies that deliver measurable ROI. We help businesses increase online visibility, drive qualified traffic, and generate consistent leads.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Start Your Growth Journey</a>
+                    <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <i class="fas fa-users" aria-hidden="true"></i>
+            </div>
+            <div class="about-content">
+                <h2>About Our Digital Marketing Agency</h2>
+                <p> Pratham IT Solutions is a premier digital marketing agency with over 10 years of experience helping businesses achieve online success. Our team of certified experts combines data-driven strategies with creative execution to deliver exceptional results.</p>
+                <p>We specialize in developing customized online marketing solutions that align with your business goals. Our ROI-driven approach ensures every marketing dollar delivers maximum value and contributes directly to your bottom line.</p>
+                <p>From local SEO to comprehensive digital marketing campaigns, we have the expertise to elevate your brand in today's competitive digital landscape.</p>
+                <a href="#contact" class="btn btn-primary">Schedule a Strategy Session</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-light" id="services">
+        <div class="container">
+            <h2>Our Digital Marketing Services</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">We offer a comprehensive suite of digital marketing services designed to drive growth, increase visibility, and maximize your return on investment.</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </div>
+                    <h3>Search Engine Optimization (SEO)</h3>
+                    <p>Comprehensive SEO strategies to improve your website's visibility in search engines, drive organic traffic, and increase qualified leads.</p>
+                </article>
+                
+                <!-- Service 2 -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ad" aria-hidden="true"></i>
+                    </div>
+                    <h3>Google Ads & PPC Campaigns</h3>
+                    <p>Strategic paid advertising campaigns on Google, Bing, and social platforms to deliver immediate traffic and measurable conversions.</p>
+                </article>
+                
+                <!-- Service 3 -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hashtag" aria-hidden="true"></i>
+                    </div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Engaging social media strategies to build brand awareness, foster community, and drive conversions across all major platforms.</p>
+                </article>
+                
+                <!-- Service 4 -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy" aria-hidden="true"></i>
+                    </div>
+                    <h3>Content Marketing & Copywriting</h3>
+                    <p>Compelling content creation and strategic distribution to attract, engage, and convert your target audience at every stage of the buyer's journey.</p>
+                </article>
+                
+                <!-- Service 5 -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                    </div>
+                    <h3>Branding & Graphic Design</h3>
+                    <p>Professional branding and design services to create a cohesive visual identity that resonates with your audience and builds trust.</p>
+                </article>
+                
+                <!-- Service 6 -->
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Website & Conversion Rate Optimization</h3>
+                    <p>Optimizing websites for maximum performance, user experience, and conversion rates to turn visitors into customers.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Explore our recent work across various industries, showcasing our expertise in eCommerce marketing, local SEO, and lead generation campaigns.</p>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>eCommerce Growth Strategy</h3>
+                        <p>Comprehensive digital marketing campaign for an online retailer resulting in 250% revenue growth in 6 months.</p>
+                    </div>
+                </article>
+                
+                <!-- Portfolio Item 2 -->
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Local SEO Dominance</h3>
+                        <p>Local SEO campaign for a service-based business achieving #1 rankings for 15+ high-intent keywords.</p>
+                    </div>
+                </article>
+                
+                <!-- Portfolio Item 3 -->
+                <article class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-bullseye" aria-hidden="true"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>B2B Lead Generation</h3>
+                        <p>Targeted lead generation campaign for a SaaS company delivering 300+ qualified leads per month.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-light" id="projects">
+        <div class="container">
+            <h2>Campaign Results & Metrics</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">We measure success through tangible results. Here are some of the key performance indicators from our recent campaigns.</p>
+            
+            <div class="projects-stats">
+                <div class="stat-card">
+                    <div class="stat-value">+325%</div>
+                    <div class="stat-label">Organic Traffic Growth</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">+180%</div>
+                    <div class="stat-label">Lead Generation Increase</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">4.8x</div>
+                    <div class="stat-label">Return on Ad Spend</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">-40%</div>
+                    <div class="stat-label">Cost Per Acquisition</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Hear from businesses that have transformed their digital presence and achieved remarkable growth with our strategies.</p>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-text">
+                        " Pratham IT Solutions transformed our online presence completely. Our organic traffic increased by 300% in just 8 months, and we're now generating qualified leads consistently."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Rakesh Singhaniya</h4>
+                            <p>Marketing Director, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Testimonial 2 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The PPC campaign managed by  Pratham IT Solutions delivered a 4.8x ROI in the first quarter. Their data-driven approach and constant optimization made all the difference."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ruhi kaur</h4>
+                            <p>CEO, RetailGrowth Co.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Testimonial 3 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As a local service business, the local SEO strategy implemented by  Pratham IT Solutions put us on the map. We're now the top result for all our key service areas."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mukesh Mishra</h4>
+                            <p>Owner, Premium Home Services</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-light" id="contact">
+        <div class="container">
+            <h2>Contact Our Digital Marketing Experts</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Ready to grow your business? Get in touch for a free consultation and customized digital marketing strategy.</p>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="seo">SEO</option>
+                                <option value="ppc">PPC & Google Ads</option>
+                                <option value="social">Social Media Marketing</option>
+                                <option value="content">Content Marketing</option>
+                                <option value="branding">Branding & Design</option>
+                                <option value="cro">Conversion Rate Optimization</option>
+                                <option value="full">Full Digital Marketing Package</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Consultation</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Near mera maan guest house, Malik mau, Raebareli</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>+91-8423792646</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>pratham.dm2007@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <i class="fas fa-map" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3> Pratham Solutions</h3>
+                    <p>Premier digital marketing agency specializing in SEO, PPC, social media marketing, and lead generation strategies that deliver measurable ROI.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pratham-singh-chauhan-b441223a1/" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/thakur.pratham2007/" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/krishna.singh.243999" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/singh_prat96013" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Search Engine Optimization (SEO)</a></li>
+                        <li><a href="#services">Google Ads & PPC</a></li>
+                        <li><a href="#services">Social Media Marketing</a></li>
+                        <li><a href="#services">Content Marketing</a></li>
+                        <li><a href="#services">Website Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Raebareli,Uttar Pradesh</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> +91-8423792646</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> pratham.dm2007@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023  Pratham IT Solutions Marketing Agency. All rights reserved. | <a href="#" style="color: var(--vibrant-yellow);">Privacy Policy</a> | <a href="#" style="color: var(--vibrant-yellow);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+            this.innerHTML = document.getElementById('mainNav').classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mainNav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mainNav').classList.remove('active');
+                document.getElementById('mobileMenuBtn').innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // In a real implementation, you would send this data to a server
+            // For this example, we'll just show an alert
+            alert(`Thank you ${name}! Your consultation request has been received. We'll contact you at ${email} within 24 hours.`);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add animation on scroll (simplified version)
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            
+            // Add sticky effect to header
+            const header = document.querySelector('header');
+            if(scrollPosition > 100) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
