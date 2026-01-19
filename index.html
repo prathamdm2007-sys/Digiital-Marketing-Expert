@@ -1,953 +1,1052 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Pratham IT Solutions | Results-Driven Digital Marketing Agency for Business Growth</title>
-    <meta name="description" content=" Pratham IT Solutions is a premier digital marketing agency specializing in SEO, PPC, social media marketing, and lead generation. We deliver measurable ROI for businesses of all sizes.">
-    <meta name="keywords" content="digital marketing agency, SEO services, PPC campaigns, social media marketing, lead generation, online marketing solutions">
-    <meta name="author" content=" Pratham IT Solutions Agency">
-    
-    <!-- Open Graph Tags for Social Media -->
-    <meta property="og:title" content=" Pratham IT Solutions | Results-Driven Digital Marketing Agency">
-    <meta property="og:description" content="We help businesses grow with data-driven digital marketing strategies that deliver measurable ROI.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.vertexdigital.com">
-    <meta property="og:image" content="https://www.vertexdigital.com/images/og-image.jpg">
-    
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Pratham Singh Chauhan - Social Media Manager</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
     <style>
-        :root {
-            --primary-blue: #0047AB;
-            --secondary-blue: #002D72;
-            --dark-blue: #001F4F;
-            --vibrant-yellow: #FFD700;
-            --light-yellow: #FFF9E6;
-            --light-gray: #F8F9FA;
-            --medium-gray: #6C757D;
-            --dark-gray: #343A40;
-            --white: #FFFFFF;
-            --transition: all 0.3s ease;
-            --border-radius: 8px;
-            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            --section-padding: 80px 0;
-        }
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: var(--dark-gray);
-            overflow-x: hidden;
+            color: #333;
+            scroll-behavior: smooth;
         }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            color: var(--secondary-blue);
-        }
-        
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            position: relative;
-        }
-        
-        h2:after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 70px;
-            height: 4px;
-            background-color: var(--vibrant-yellow);
-        }
-        
-        h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-            text-align: center;
-        }
-        
-        .btn-primary {
-            background-color: var(--vibrant-yellow);
-            color: var(--secondary-blue);
-        }
-        
-        .btn-primary:hover {
-            background-color: var(--secondary-blue);
-            color: var(--white);
-            transform: translateY(-3px);
-            box-shadow: var(--box-shadow);
-        }
-        
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--secondary-blue);
-            border: 2px solid var(--secondary-blue);
-        }
-        
-        .btn-secondary:hover {
-            background-color: var(--secondary-blue);
-            color: var(--white);
-            transform: translateY(-3px);
-        }
-        
-        /* Header Section */
+
+        /* Header & Navigation */
         header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: fixed;
-            top: 0;
             width: 100%;
+            top: 0;
             z-index: 1000;
         }
-        
-        .header-container {
+
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
         }
-        
+
         .logo {
-            display: flex;
-            align-items: center;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary-blue);
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2563eb;
         }
-        
-        .logo span {
-            color: var(--vibrant-yellow);
-        }
-        
-        nav ul {
+
+        .nav-menu {
             display: flex;
             list-style: none;
+            gap: 2rem;
         }
-        
-        nav li {
-            margin-left: 30px;
-        }
-        
-        nav a {
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
             font-weight: 500;
-            font-size: 1rem;
-            color: var(--dark-gray);
-            position: relative;
+            transition: color 0.3s;
         }
-        
-        nav a:hover {
-            color: var(--primary-blue);
+
+        .nav-menu a:hover {
+            color: #2563eb;
         }
-        
-        nav a:after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--vibrant-yellow);
-            transition: var(--transition);
-        }
-        
-        nav a:hover:after {
-            width: 100%;
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--primary-blue);
-            cursor: pointer;
-        }
-        
+
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-            color: var(--white);
-            padding: 180px 0 180px;
-            margin-top: 80px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%), 
+                        url('https://images.unsplash.com/photo-611926695-dd0f8da5e56e?w=1600') center/cover;
+            color: white;
+            padding: 180px 5% 120px;
+            text-align: center;
+            margin-top: 70px;
         }
-        
-        .hero-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        
+
         .hero h1 {
-            color: var(--white);
-            font-size: 3.2rem;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        
+
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 2rem;
-            color: rgba(255, 255, 255, 0.9);
+            opacity: 0.95;
         }
-        
-        .hero-btns {
-            display: flex;
-            gap: 20px;
+
+        .cta-button {
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            display: inline-block;
         }
-        
-        .hero-image {
-            background-color: var(--light-gray);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            height: 400px;
-            box-shadow: var(--box-shadow);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
-        
-        .hero-image i {
-            font-size: 10rem;
-            color: var(--primary-blue);
-        }
-        
-        /* Sections Common Styling */
+
+        /* Section Styles */
         section {
-            padding: var(--section-padding);
+            padding: 80px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
         }
-        
-        .section-light {
-            background-color: var(--light-gray);
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2563eb;
         }
-        
+
         /* About Section */
         .about-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
             align-items: center;
         }
-        
+
         .about-image {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            overflow: hidden;
+            width: 100%;
             height: 400px;
-            box-shadow: var(--box-shadow);
+            background: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800') center/cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .about-content h3 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-box h4 {
+            font-size: 2.5rem;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .values {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
         }
-        
-        .about-image i {
-            font-size: 10rem;
-            color: var(--primary-blue);
+
+        .value-tag {
+            background: #2563eb;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 0.95rem;
         }
-        
+
         /* Services Section */
+        #services {
+            background: #f8fafc;
+        }
+
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
         }
-        
+
         .service-card {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            padding: 40px 30px;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-            text-align: center;
+            background: white;
+            padding: 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            overflow: hidden;
         }
-        
+
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            background-color: var(--light-yellow);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
+
+        .service-image {
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-position: center;
         }
-        
-        .service-icon i {
-            font-size: 2.5rem;
-            color: var(--primary-blue);
+
+        .service-content {
+            padding: 2rem;
         }
-        
+
+        .service-card h3 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
         /* Portfolio Section */
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
         }
-        
+
         .portfolio-card {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
+            background: white;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        
+
         .portfolio-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .portfolio-image {
+            width: 100%;
             height: 220px;
-            background-color: var(--primary-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-size: cover;
+            background-position: center;
         }
-        
-        .portfolio-image i {
-            font-size: 5rem;
-            color: var(--white);
-        }
-        
+
         .portfolio-content {
-            padding: 25px;
+            padding: 1.5rem;
         }
-        
-        /* Projects Section */
-        .projects-stats {
+
+        .portfolio-content h3 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-content p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .portfolio-metrics {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid #f8fafc;
         }
-        
-        .stat-card {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            padding: 40px 20px;
+
+        .metric {
             text-align: center;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
         }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
+
+        .metric h4 {
+            color: #2563eb;
+            font-size: 1.5rem;
         }
-        
-        .stat-value {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-blue);
-            margin-bottom: 10px;
+
+        .metric p {
+            font-size: 0.85rem;
         }
-        
-        .stat-label {
-            font-size: 1.1rem;
-            color: var(--medium-gray);
-        }
-        
+
         /* Testimonials Section */
+        #testimonials {
+            background: #f8fafc;
+        }
+
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
-        
+
         .testimonial-card {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            padding: 30px;
-            box-shadow: var(--box-shadow);
-            position: relative;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
-        
-        .testimonial-card:before {
-            content: '"';
-            font-size: 5rem;
-            color: var(--light-yellow);
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            font-family: Georgia, serif;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
+
+        .testimonial-header {
             display: flex;
             align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
         }
-        
-        .author-avatar {
-            width: 50px;
-            height: 50px;
+
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            background-color: var(--light-gray);
-            margin-right: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .testimonial-info h4 {
+            color: #2563eb;
+            margin-bottom: 0.2rem;
+        }
+
+        .testimonial-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+            margin-top: 0.3rem;
+        }
+
+        .testimonial-card > p {
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        /* Process Section */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .process-icon {
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        
-        .author-avatar i {
             font-size: 1.5rem;
-            color: var(--primary-blue);
+            font-weight: bold;
+            margin: 0 auto 1rem;
         }
-        
-        .author-info h4 {
-            margin-bottom: 5px;
+
+        .process-step h3 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
         }
-        
-        .author-info p {
-            margin-bottom: 0;
-            color: var(--medium-gray);
+
+        /* Blog Section */
+        #blog {
+            background: #f8fafc;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-category {
+            background: #2563eb;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .blog-content h3 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-meta {
+            color: #666;
             font-size: 0.9rem;
+            margin-bottom: 1rem;
         }
-        
+
+        .read-more {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+        }
+
+        .read-more:hover {
+            gap: 1rem;
+        }
+
         /* Contact Section */
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            gap: 3rem;
         }
-        
+
         .contact-form {
-            background-color: var(--white);
-            padding: 40px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
+            background: #f8fafc;
+            padding: 2.5rem;
+            border-radius: 15px;
         }
-        
+
+        .contact-form h3 {
+            color: #2563eb;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
-        
+
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
             font-weight: 500;
+            color: #2563eb;
         }
-        
-        .form-control {
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
             width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: var(--border-radius);
-            font-family: 'Inter', sans-serif;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
             font-size: 1rem;
+            transition: border-color 0.3s;
         }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
         }
-        
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background: #2563eb;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-button:hover {
+            background: #1d4ed8;
+        }
+
+        .contact-info h3 {
+            color: #2563eb;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
         .contact-details {
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: #f8fafc;
+            border-radius: 10px;
         }
-        
+
         .contact-icon {
             width: 50px;
             height: 50px;
-            background-color: var(--light-yellow);
+            background: #2563eb;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 15px;
-        }
-        
-        .contact-icon i {
             font-size: 1.3rem;
-            color: var(--primary-blue);
         }
-        
-        .map-container {
-            height: 300px;
-            background-color: var(--light-gray);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
+        .contact-item-content h4 {
+            color: #2563eb;
+            margin-bottom: 0.2rem;
         }
-        
-        .map-container i {
-            font-size: 3rem;
-            color: var(--primary-blue);
+
+        .contact-map {
+            width: 100%;
+            height: 250px;
+            background: 
+Sarah Kim
+            border-radius: 10px;
+            margin-bottom: 2rem;
         }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark-blue);
-            color: var(--white);
-            padding: 70px 0 30px;
-        }
-        
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-        
-        .footer-col h3 {
-            color: var(--white);
-            font-size: 1.5rem;
-            margin-bottom: 25px;
-            position: relative;
-        }
-        
-        .footer-col h3:after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background-color: var(--vibrant-yellow);
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
-        }
-        
-        .footer-links a:hover {
-            color: var(--vibrant-yellow);
-            padding-left: 5px;
-        }
-        
+
         .social-links {
             display: flex;
-            gap: 15px;
-            margin-top: 20px;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
         }
-        
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: #2563eb;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-decoration: none;
+            font-size: 1.3rem;
+            transition: transform 0.3s, background 0.3s;
         }
-        
-        .social-links a:hover {
-            background-color: var(--vibrant-yellow);
-            color: var(--dark-blue);
+
+        .social-link:hover {
+            transform: scale(1.15);
+            background: #1d4ed8;
         }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
+
+        /* Footer */
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 5% 30px;
         }
-        
-        /* WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background-color: #25D366;
-            color: var(--white);
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            color: #60a5fa;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: #60a5fa;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #1d4ed8;
+        }
+
+        .certifications {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .cert-badge {
+            background: #334155;
+            padding: 10px 18px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .footer-social-link {
+            width: 45px;
+            height: 45px;
+            background: #334155;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            z-index: 100;
-            transition: var(--transition);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.3s;
         }
-        
-        .whatsapp-float:hover {
-            background-color: #128C7E;
+
+        .footer-social-link:hover {
+            background: #2563eb;
             transform: scale(1.1);
         }
-        
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            h1 {
-                font-size: 2.8rem;
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #cbd5e1;
+        }
+
+        .footer-bottom p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
             }
-            
-            h2 {
+
+            .hero h1 {
                 font-size: 2.2rem;
             }
-            
-            .hero-container,
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
             .about-container,
             .contact-container {
                 grid-template-columns: 1fr;
-                gap: 40px;
             }
-            
-            .hero {
-                padding: 150px 0 80px;
-            }
-            
-            .hero-image,
-            .about-image {
-                height: 300px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            nav {
-                position: fixed;
-                top: 80px;
-                left: 0;
-                width: 100%;
-                background-color: var(--white);
-                padding: 20px;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
-                transition: var(--transition);
-            }
-            
-            nav.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
-            }
-            
-            nav ul {
-                flex-direction: column;
-            }
-            
-            nav li {
-                margin: 0 0 20px 0;
-            }
-            
-            .hero-btns {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .services-grid,
-            .portfolio-grid,
-            .testimonials-grid {
+
+            .stats {
                 grid-template-columns: 1fr;
             }
-            
-            .contact-form {
-                padding: 30px 20px;
+
+            .services-grid,
+            .portfolio-grid,
+            .blog-grid {
+                grid-template-columns: 1fr;
             }
-            
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 1.5rem;
-                bottom: 20px;
-                right: 20px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            h1 {
-                font-size: 2.3rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .hero {
-                padding: 130px 0 60px;
-            }
-            
-            section {
-                padding: 60px 0;
+
+            .footer-content {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/8423792646?text=Hello%20Pratham%20Solutions%2C%20I'm%20interested%20in%20your%20digital%20marketing%20services" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <div class="container header-container">
-            <a href="#" class="logo">Pratham<span> Solutions</span></a>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact" class="btn btn-primary">Get a Free Digital Marketing Consultation</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">Pratham Singh Chauhan</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1>Results-Driven Digital Marketing Agency for Business Growth</h1>
-                <p> Pratham IT Solutions specializes in SEO, PPC, social media marketing, and lead generation strategies that deliver measurable ROI. We help businesses increase online visibility, drive qualified traffic, and generate consistent leads.</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Start Your Growth Journey</a>
-                    <a href="#portfolio" class="btn btn-primary">View Our Work</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <i class="fas fa-chart-line" aria-hidden="true"></i>
-            </div>
-        </div>
+    <section id="home" class="hero">
+        <h1>Pratham Singh Chauhan</h1>
+        <p>Transforming Brands Through Strategic Social Media Excellence</p>
+        <a href="#contact" class="cta-button">Schedule a Consultation</a>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="container about-container">
-            <div class="about-image">
-                <i class="fas fa-users" aria-hidden="true"></i>
-            </div>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image"></div>
             <div class="about-content">
-                <h2>About Our Digital Marketing Agency</h2>
-                <p> Pratham IT Solutions is a premier digital marketing agency with over 10 years of experience helping businesses achieve online success. Our team of certified experts combines data-driven strategies with creative execution to deliver exceptional results.</p>
-                <p>We specialize in developing customized online marketing solutions that align with your business goals. Our ROI-driven approach ensures every marketing dollar delivers maximum value and contributes directly to your bottom line.</p>
-                <p>From local SEO to comprehensive digital marketing campaigns, we have the expertise to elevate your brand in today's competitive digital landscape.</p>
-                <a href="#contact" class="btn btn-primary">Schedule a Strategy Session</a>
+                <h3>Driving Digital Success for 7+ Years</h3>
+                <p>With over seven years of experience in social media management, I specialize in transforming brands into digital powerhouses. My expertise spans content strategy, community management, advanced analytics, and paid advertising across all major platforms.</p>
+                
+                <p>I hold certifications from Facebook Blueprint, Google Analytics, and HubSpot Academy, and have successfully managed campaigns for clients across diverse industries including retail, technology, healthcare, and hospitality. My data-driven approach combines creative storytelling with measurable results, helping businesses achieve an average of 250% increase in engagement and 180% growth in follower base.</p>
+                
+                <p><strong>My Mission:</strong> To empower businesses with strategic social media solutions that drive authentic engagement, build loyal communities, and deliver measurable ROI. I believe in creating content that resonates, strategies that convert, and partnerships that last.</p>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <h4>150+</h4>
+                        <p>Clients Served</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>500+</h4>
+                        <p>Campaigns Launched</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>250%</h4>
+                        <p>Avg. Engagement Growth</p>
+                    </div>
+                </div>
+
+                <div class="values">
+                    <span class="value-tag">Creativity</span>
+                    <span class="value-tag">Results-Driven</span>
+                    <span class="value-tag">Authenticity</span>
+                    <span class="value-tag">Innovation</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="section-light" id="services">
-        <div class="container">
-            <h2>Our Digital Marketing Services</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">We offer a comprehensive suite of digital marketing services designed to drive growth, increase visibility, and maximize your return on investment.</p>
-            
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                    </div>
-                    <h3>Search Engine Optimization (SEO)</h3>
-                    <p>Comprehensive SEO strategies to improve your website's visibility in search engines, drive organic traffic, and increase qualified leads.</p>
-                </article>
-                
-                <!-- Service 2 -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-ad" aria-hidden="true"></i>
-                    </div>
-                    <h3>Google Ads & PPC Campaigns</h3>
-                    <p>Strategic paid advertising campaigns on Google, Bing, and social platforms to deliver immediate traffic and measurable conversions.</p>
-                </article>
-                
-                <!-- Service 3 -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-hashtag" aria-hidden="true"></i>
-                    </div>
-                    <h3>Social Media Marketing</h3>
-                    <p>Engaging social media strategies to build brand awareness, foster community, and drive conversions across all major platforms.</p>
-                </article>
-                
-                <!-- Service 4 -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pen-fancy" aria-hidden="true"></i>
-                    </div>
-                    <h3>Content Marketing & Copywriting</h3>
-                    <p>Compelling content creation and strategic distribution to attract, engage, and convert your target audience at every stage of the buyer's journey.</p>
-                </article>
-                
-                <!-- Service 5 -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette" aria-hidden="true"></i>
-                    </div>
-                    <h3>Branding & Graphic Design</h3>
-                    <p>Professional branding and design services to create a cohesive visual identity that resonates with your audience and builds trust.</p>
-                </article>
-                
-                <!-- Service 6 -->
-                <article class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                    </div>
-                    <h3>Website & Conversion Rate Optimization</h3>
-                    <p>Optimizing websites for maximum performance, user experience, and conversion rates to turn visitors into customers.</p>
-                </article>
+    <section id="services">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800');"></div>
+                <div class="service-content">
+                    <h3>Social Media Strategy Development</h3>
+                    <ul>
+                        <li>Comprehensive audit of current social presence</li>
+                        <li>Custom strategy aligned with business goals</li>
+                        <li>Platform selection and optimization</li>
+                        <li>Content calendar planning</li>
+                        <li>Competitor analysis and benchmarking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800');"></div>
+                <div class="service-content">
+                    <h3>Content Creation & Management</h3>
+                    <ul>
+                        <li>Professional copywriting for all platforms</li>
+                        <li>Graphic design and video content</li>
+                        <li>Daily posting and scheduling</li>
+                        <li>Brand voice development</li>
+                        <li>Hashtag strategy and optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800');"></div>
+                <div class="service-content">
+                    <h3>Community Management</h3>
+                    <ul>
+                        <li>Active engagement with followers</li>
+                        <li>Comment and message moderation</li>
+                        <li>Crisis management and reputation monitoring</li>
+                        <li>Building authentic relationships</li>
+                        <li>User-generated content curation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800');"></div>
+                <div class="service-content">
+                    <h3>Social Media Advertising</h3>
+                    <ul>
+                        <li>Paid campaign strategy and execution</li>
+                        <li>Facebook, Instagram, LinkedIn, Twitter ads</li>
+                        <li>A/B testing and optimization</li>
+                        <li>Budget management and ROI tracking</li>
+                        <li>Retargeting and lookalike audiences</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800');"></div>
+                <div class="service-content">
+                    <h3>Analytics & Reporting</h3>
+                    <ul>
+                        <li>Detailed performance metrics</li>
+                        <li>Monthly comprehensive reports</li>
+                        <li>Competitor analysis</li>
+                        <li>Data-driven recommendations</li>
+                        <li>ROI measurement and optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800');"></div>
+                <div class="service-content">
+                    <h3>Brand Development</h3>
+                    <ul>
+                        <li>Visual identity consistency</li>
+                        <li>Voice and messaging guidelines</li>
+                        <li>Audience persona development</li>
+                        <li>Brand positioning strategy</li>
+                        <li>Content pillar creation</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <div class="container">
-            <h2>Our Portfolio</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Explore our recent work across various industries, showcasing our expertise in eCommerce marketing, local SEO, and lead generation campaigns.</p>
-            
-            <div class="portfolio-grid">
-                <!-- Portfolio Item 1 -->
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        <h2 class="section-title">Portfolio & Case Studies</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800');"></div>
+                <div class="portfolio-content">
+                    <h3>Fashion Retailer Transformation</h3>
+                    <p><strong>Challenge:</strong> Low engagement and declining sales through social channels.</p>
+                    <p><strong>Strategy:</strong> Implemented influencer partnerships, user-generated content campaigns, and targeted Instagram Shopping ads.</p>
+                    <div class="portfolio-metrics">
+                        <div class="metric">
+                            <h4>320%</h4>
+                            <p>Engagement Increase</p>
+                        </div>
+                        <div class="metric">
+                            <h4>$450K</h4>
+                            <p>Revenue Generated</p>
+                        </div>
                     </div>
-                    <div class="portfolio-content">
-                        <h3>eCommerce Growth Strategy</h3>
-                        <p>Comprehensive digital marketing campaign for an online retailer resulting in 250% revenue growth in 6 months.</p>
-                    </div>
-                </article>
-                
-                <!-- Portfolio Item 2 -->
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Local SEO Dominance</h3>
-                        <p>Local SEO campaign for a service-based business achieving #1 rankings for 15+ high-intent keywords.</p>
-                    </div>
-                </article>
-                
-                <!-- Portfolio Item 3 -->
-                <article class="portfolio-card">
-                    <div class="portfolio-image">
-                        <i class="fas fa-bullseye" aria-hidden="true"></i>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>B2B Lead Generation</h3>
-                        <p>Targeted lead generation campaign for a SaaS company delivering 300+ qualified leads per month.</p>
-                    </div>
-                </article>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="section-light" id="projects">
-        <div class="container">
-            <h2>Campaign Results & Metrics</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">We measure success through tangible results. Here are some of the key performance indicators from our recent campaigns.</p>
-            
-            <div class="projects-stats">
-                <div class="stat-card">
-                    <div class="stat-value">+325%</div>
-                    <div class="stat-label">Organic Traffic Growth</div>
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800');"></div>
+                <div class="portfolio-content">
+                    <h3>SaaS Product Launch</h3>
+                    <p><strong>Challenge:</strong> Building awareness for new B2B software in competitive market.</p>
+                    <p><strong>Strategy:</strong> LinkedIn thought leadership, educational content series, and targeted lead generation campaigns.</p>
+                    <div class="portfolio-metrics">
+                        <div class="metric">
+                            <h4>5,000+</h4>
+                            <p>Qualified Leads</p>
+                        </div>
+                        <div class="metric">
+                            <h4>180%</h4>
+                            <p>Follower Growth</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="stat-card">
-                    <div class="stat-value">+180%</div>
-                    <div class="stat-label">Lead Generation Increase</div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800');"></div>
+                <div class="portfolio-content">
+                    <h3>Medical Practice Brand Building</h3>
+                    <p><strong>Challenge:</strong> Establishing trust and attracting new patients in local market.</p>
+                    <p><strong>Strategy:</strong> Educational content, patient testimonials, and local Facebook advertising.</p>
+                    <div class="portfolio-metrics">
+                        <div class="metric">
+                            <h4>400+</h4>
+                            <p>New Patients</p>
+                        </div>
+                        <div class="metric">
+                            <h4>4.9★</h4>
+                            <p>Review Rating</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="stat-card">
-                    <div class="stat-value">4.8x</div>
-                    <div class="stat-label">Return on Ad Spend</div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800');"></div>
+                <div class="portfolio-content">
+                    <h3>Food & Beverage Expansion</h3>
+                    <p><strong>Challenge:</strong> Increasing foot traffic and online orders across 5 locations.</p>
+                    <p><strong>Strategy:</strong> Instagram food photography, limited-time offer campaigns, and geo-targeted ads.</p>
+                    <div class="portfolio-metrics">
+                        <div class="metric">
+                            <h4>275%</h4>
+                            <p>Online Order Growth</p>
+                        </div>
+                        <div class="metric">
+                            <h4>50K+</h4>
+                            <p>New Followers</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="stat-card">
-                    <div class="stat-value">-40%</div>
-                    <div class="stat-label">Cost Per Acquisition</div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800');"></div>
+                <div class="portfolio-content">
+                    <h3>Fitness Studio Community Building</h3>
+                    <p><strong>Challenge:</strong> Building engaged community and increasing class bookings.</p>
+                    <p><strong>Strategy:</strong> Workout videos, member spotlights, challenge campaigns, and TikTok expansion.</p>
+                    <div class="portfolio-metrics">
+                        <div class="metric">
+                            <h4>800+</h4>
+                            <p>Monthly Bookings</p>
+                        </div>
+                        <div class="metric">
+                            <h4>350%</h4>
+                            <p>Engagement Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800');"></div>
+                <div class="portfolio-content">
+                    <h3>Real Estate Agency Growth</h3>
+                    <p><strong>Challenge:</strong> Generating quality leads for luxury property listings.</p>
+                    <p><strong>Strategy:</strong> Virtual tours, neighborhood highlights, targeted Facebook lead ads, and LinkedIn networking.</p>
+                    <div class="portfolio-metrics">
+                        <div class="metric">
+                            <h4>$12M</h4>
+                            <p>Properties Sold</p>
+                        </div>
+                        <div class="metric">
+                            <h4>2,500+</h4>
+                            <p>Qualified Leads</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -955,145 +1054,256 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials">
-        <div class="container">
-            <h2>Client Testimonials</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Hear from businesses that have transformed their digital presence and achieved remarkable growth with our strategies.</p>
-            
-            <div class="testimonials-grid">
-                <!-- Testimonial 1 -->
-                <article class="testimonial-card">
-                    <div class="testimonial-text">
-                        " Pratham IT Solutions transformed our online presence completely. Our organic traffic increased by 300% in just 8 months, and we're now generating qualified leads consistently."
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar" style="background-image: url('https://images.pexels.com/photos/7580821/pexels-photo-7580821.jpeg');"></div>
+                    <div class="testimonial-info">
+                        <h4>Anjali singh</h4>
+                        <p>CEO, StyleHub Fashion</p>
+                        <div class="stars">★★★★★</div>
                     </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Rakesh Singhaniya</h4>
-                            <p>Marketing Director, TechSolutions Inc.</p>
-                        </div>
+                </div>
+                <p>"Pratham transformed our social media presence completely! Within 6 months, our Instagram engagement increased by 320% and we saw a direct impact on sales. His strategic approach and creative content consistently exceed expectations. Highly recommend for any business serious about social media growth."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar" style="background-image: url('https://images.pexels.com/photos/7580990/pexels-photo-7580990.jpeg');"></div>
+                    <div class="testimonial-info">
+                        <h4>Raj Mishra</h4>
+                        <p>Founder, TechFlow Solutions</p>
+                        <div class="stars">★★★★★</div>
                     </div>
-                </article>
-                
-                <!-- Testimonial 2 -->
-                <article class="testimonial-card">
-                    <div class="testimonial-text">
-                        "The PPC campaign managed by  Pratham IT Solutions delivered a 4.8x ROI in the first quarter. Their data-driven approach and constant optimization made all the difference."
+                </div>
+                <p>"Working with Pratham has been a game-changer for our B2B marketing. He helped us establish thought leadership on LinkedIn and generated over 5,000 qualified leads in one year. His understanding of our industry and ability to create compelling content is unmatched. Worth every penny!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar" style="background-image: url('https://images.pexels.com/photos/17329048/pexels-photo-17329048.jpeg');"></div>
+                    <div class="testimonial-info">
+                        <h4>Dr. Shweta Patel</h4>
+                        <p>Medical Director, HealthFirst Clinic</p>
+                        <div class="stars">★★★★★</div>
                     </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Ruhi kaur</h4>
-                            <p>CEO, RetailGrowth Co.</p>
-                        </div>
+                </div>
+                <p>"As a healthcare provider, I was skeptical about social media marketing, but Pratham proved me wrong. He created educational, trustworthy content that brought in over 400 new patients and significantly improved our online reputation. His professionalism and results speak for themselves."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar" style="background-image: url('https://images.pexels.com/photos/7580937/pexels-photo-7580937.jpeg');"></div>
+                    <div class="testimonial-info">
+                        <h4>Manish Goyal</h4>
+                        <p>Owner, Urban Bites Restaurant</p>
+                        <div class="stars">★★★★★</div>
                     </div>
-                </article>
-                
-                <!-- Testimonial 3 -->
-                <article class="testimonial-card">
-                    <div class="testimonial-text">
-                        "As a local service business, the local SEO strategy implemented by  Pratham IT Solutions put us on the map. We're now the top result for all our key service areas."
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Mukesh Mishra</h4>
-                            <p>Owner, Premium Home Services</p>
-                        </div>
-                    </div>
-                </article>
+                </div>
+                <p>"Pratham's food photography and social media campaigns brought our restaurant to life online. We've seen a 275% increase in online orders and our social media following grew by 50,000 in just 8 months. His creativity and dedication to our success has been phenomenal!"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+        <h2 class="section-title">How I Work</h2>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <div class="process-icon" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=800');"></div>
+                <h3>Discovery & Consultation</h3>
+                <p>Understanding your business, goals, and target audience through comprehensive consultation</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <div class="process-icon" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800');"></div>
+                <h3>Strategy Development</h3>
+                <p>Creating a customized social media roadmap tailored to your specific objectives</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <div class="process-icon" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800');"></div>
+                <h3>Content Creation</h3>
+                <p>Designing engaging, brand-aligned content that resonates with your audience</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-number">4</div>
+                <div class="process-icon" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800');"></div>
+                <h3>Implementation</h3>
+                <p>Launching campaigns and managing daily social media activities effectively</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-number">5</div>
+                <div class="process-icon" style="background-image: url('https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800');"></div>
+                <h3>Optimization</h3>
+                <p>Continuous monitoring and improvement based on performance data</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-number">6</div>
+                <div class="process-icon" style="background-image: url('https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=800');"></div>
+                <h3>Reporting</h3>
+                <p>Transparent performance updates with detailed insights and recommendations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2 class="section-title">Latest Insights</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800');"></div>
+                <div class="blog-content">
+                    <span class="blog-category">Strategy</span>
+                    <h3>10 Social Media Trends Dominating 2024</h3>
+                    <p class="blog-meta"><i class="far fa-calendar"></i> January 15, 2024 • 5 min read</p>
+                    <p>Discover the latest social media trends that are shaping the digital landscape this year and how to leverage them for your brand.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800');"></div>
+                <div class="blog-content">
+                    <span class="blog-category">Tips</span>
+                    <h3>Maximizing ROI on Instagram Ads</h3>
+                    <p class="blog-meta"><i class="far fa-calendar"></i> January 10, 2024 • 7 min read</p>
+                    <p>Learn proven strategies to optimize your Instagram advertising campaigns and achieve better return on investment.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image" style="background-image: url('https://images.pexels.com/photos/12419502/pexels-photo-12419502.jpeg');"></div>
+                <div class="blog-content">
+                    <span class="blog-category">Case Study</span>
+                    <h3>How We Grew a Brand from 0 to 100K Followers</h3>
+                    <p class="blog-meta"><i class="far fa-calendar"></i> January 5, 2024 • 10 min read</p>
+                    <p>A detailed case study revealing the exact strategies we used to build a massive social media following from scratch.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800');"></div>
+                <div class="blog-content">
+                    <span class="blog-category">Industry News</span>
+                    <h3>LinkedIn Algorithm Updates: What You Need to Know</h3>
+                    <p class="blog-meta"><i class="far fa-calendar"></i> December 28, 2023 • 6 min read</p>
+                    <p>Understanding the latest LinkedIn algorithm changes and how to adapt your content strategy accordingly.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="section-light" id="contact">
-        <div class="container">
-            <h2>Contact Our Digital Marketing Experts</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Ready to grow your business? Get in touch for a free consultation and customized digital marketing strategy.</p>
-            
-            <div class="contact-container">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Service Interested In</label>
-                            <select id="service" class="form-control">
-                                <option value="">Select a service</option>
-                                <option value="seo">SEO</option>
-                                <option value="ppc">PPC & Google Ads</option>
-                                <option value="social">Social Media Marketing</option>
-                                <option value="content">Content Marketing</option>
-                                <option value="branding">Branding & Design</option>
-                                <option value="cro">Conversion Rate Optimization</option>
-                                <option value="full">Full Digital Marketing Package</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message *</label>
-                            <textarea id="message" class="form-control" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Consultation</button>
-                    </form>
-                </div>
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="strategy">Social Media Strategy</option>
+                            <option value="content">Content Creation</option>
+                            <option value="community">Community Management</option>
+                            <option value="advertising">Social Media Advertising</option>
+                            <option value="analytics">Analytics & Reporting</option>
+                            <option value="branding">Brand Development</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range (Optional)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under5k">Under $5,000</option>
+                            <option value="5k-10k">$5,000 - $10,000</option>
+                            <option value="10k-25k">$10,000 - $25,000</option>
+                            <option value="25k+">$25,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
                 
-                <div class="contact-info">
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <h4>Our Location</h4>
-                                <p>Near mera maan guest house, Malik mau, Raebareli</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <h4>Phone Number</h4>
-                                <p>+91-8423792646</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <h4>Email Address</h4>
-                                <p>pratham.dm2007@gmail.com</p>
-                            </div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <p>pratham.dm2007@gmail.com</p>
                         </div>
                     </div>
-                    
-                    <div class="map-container">
-                        <i class="fas fa-map" aria-hidden="true"></i>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-item-content">
+                            <h4>Phone</h4>
+                            <p>+91 8423792646</p>
+                        </div>
                     </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-item-content">
+                            <h4>Address</h4>
+                            <p>Raebareli, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-item-content">
+                            <h4>Business Hours</h4>
+                            <p>Mon - SAT: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map"></div>
+
+                <h4 style="color: #2563eb; margin-bottom: 1rem;">Connect With Me</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                   
+             
                 </div>
             </div>
         </div>
@@ -1101,119 +1311,112 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3> Pratham Solutions</h3>
-                    <p>Premier digital marketing agency specializing in SEO, PPC, social media marketing, and lead generation strategies that deliver measurable ROI.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/pratham-singh-chauhan-b441223a1/" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/thakur.pratham2007/" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/krishna.singh.243999" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/singh_prat96013" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Our Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#services">Search Engine Optimization (SEO)</a></li>
-                        <li><a href="#services">Google Ads & PPC</a></li>
-                        <li><a href="#services">Social Media Marketing</a></li>
-                        <li><a href="#services">Content Marketing</a></li>
-                        <li><a href="#services">Website Optimization</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contact Info</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Raebareli,Uttar Pradesh</li>
-                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> +91-8423792646</li>
-                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> pratham.dm2007@gmail.com</li>
-                    </ul>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Pratham Singh Chauhan</h3>
+                <p>A passionate Social Media Manager with 7+ years of experience helping brands grow their online presence through strategic content, community engagement, and data-driven campaigns.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                  
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023  Pratham IT Solutions Marketing Agency. All rights reserved. | <a href="#" style="color: var(--vibrant-yellow);">Privacy Policy</a> | <a href="#" style="color: var(--vibrant-yellow);">Terms of Service</a></p>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                    <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                </ul>
             </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Social Media Strategy</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Content Creation</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Community Management</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Social Media Advertising</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Analytics & Reporting</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Brand Development</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> pratham.chauhan@socialmedia.com</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Lucknow, UP, India</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+                </ul>
+                
+                <h3 style="margin-top: 2rem;">Certifications</h3>
+                <div class="certifications">
+                    <span class="cert-badge"><i class="fas fa-certificate"></i> Facebook Blueprint</span>
+                    <span class="cert-badge"><i class="fas fa-certificate"></i> Google Analytics</span>
+                    <span class="cert-badge"><i class="fas fa-certificate"></i> HubSpot</span>
+                    <span class="cert-badge"><i class="fas fa-certificate"></i> Hootsuite</span>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to my newsletter for the latest social media tips, trends, and strategies.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+
+                <h3 style="margin-top: 2rem;">Recent Posts</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 10 Social Media Trends 2024</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Maximizing ROI on Instagram</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> 0 to 100K Followers Guide</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pratham Singh Chauhan. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color: #ef4444;"></i> for Social Media Excellence</p>
         </div>
     </footer>
 
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
-            document.getElementById('mainNav').classList.toggle('active');
-            this.innerHTML = document.getElementById('mainNav').classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('#mainNav a').forEach(link => {
-            link.addEventListener('click', function() {
-                document.getElementById('mainNav').classList.remove('active');
-                document.getElementById('mobileMenuBtn').innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            
-            // In a real implementation, you would send this data to a server
-            // For this example, we'll just show an alert
-            alert(`Thank you ${name}! Your consultation request has been received. We'll contact you at ${email} within 24 hours.`);
-            
-            // Reset form
-            this.reset();
-        });
-        
-        // Smooth scrolling for anchor links
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
                     });
                 }
             });
         });
-        
-        // Add animation on scroll (simplified version)
-        window.addEventListener('scroll', function() {
-            const scrollPosition = window.scrollY;
-            
-            // Add sticky effect to header
-            const header = document.querySelector('header');
-            if(scrollPosition > 100) {
-                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            }
+
+        // Form submission
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing to my newsletter!');
+            this.reset();
         });
     </script>
 </body>
